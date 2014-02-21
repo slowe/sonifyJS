@@ -1,7 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-	<head>
-		<title>JavaScript Audio Write Example</title>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Sonifyjs by slowe</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 		<script type="text/javascript" src="sonify.js"></script>
 		<script>
 		// http://dustindiaz.com/smallest-domready-ever
@@ -9,11 +18,36 @@
 		
 		r(function(){
 			var s = $.sonify({id:"image",width:455,height:333});
+ 
  			s.start();
 		});
 		</script>
-	</head>
-	<body>
-		<img src="testcard.png" style="width: 500px; height:500px; cursor: pointer;" id="image" />
-	</body>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Sonifyjs</h1>
+        <p>Turn images into sounds</p>
+
+        <p class="view"><a href="https://github.com/slowe/sonifyJS">View the Project on GitHub <small>slowe/sonifyJS</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/slowe/sonifyJS/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/slowe/sonifyJS/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/slowe/sonifyJS">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+		<img src="testcard.png" style="width: 500px;height:500px; cursor: pointer;" id="image" />
+		<p>Move your mouse over the image above. In modern browsers you should hear different tones for different amounts of red, green and blue under your cursor.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/slowe">slowe</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
 </html>
