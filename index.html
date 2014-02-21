@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript Audio Write Example</title>
+		<script type="text/javascript" src="sonify.js"></script>
+		<script>
+		// http://dustindiaz.com/smallest-domready-ever
+		function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
+		
+		r(function(){
+			var s = $.sonify({id:"image",width:455,height:333});
+ 			s.start();
+		});
+		</script>
+	</head>
+	<body>
+		<img src="testcard.png" style="width: 500px; height:500px; cursor: pointer;" id="image" />
+	</body>
+</html>
